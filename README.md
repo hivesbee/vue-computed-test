@@ -1,29 +1,14 @@
 # vue-computed-test
 
-## Project setup
-```
-npm install
-```
+## 背景
+Vue のコンポーネントで関数を返したら全評価し直しに本当になっちゃうのか気になったのでテスト
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 結果
+全評価し直しでした
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 小言
+リスト系のスタイルを当てたり外したりするときによく使ってたのでちょい悲しい
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 対策
+`ListItem.vue` みたいにリストアイテム専用のコンポーネントを作り、props で受け取った単一のデータを computed するのが良さそうですかね…  
+コンポーネントの分解をサボってはいけない（戒め）
